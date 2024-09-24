@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZJX6J5KGB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9ZJX6J5KGB');
+</script>
+    
+    <link rel="icon" href="fav/favicon.ico">
+    <title>Frontend</title>
+    <meta name="keywords" content="Frontend, development, develop, programming">
+    <meta name="description" content="What is a frontend and what does it do?">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no"> <!-- Princip Bootstrap-a: Mobilna verzija prvo. Ovaj tag to omogucava. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:url" content="https://stefantri.github.io/Frontend/index.html">
+    <meta property="og:type" content="website/">
+    <meta property="og:title" content="Frontend">
+    <meta property="og:description" content="If you want to learn frontend? Check out the site and find out everything about it">
+    <meta property="og:image" content="https://stefantri.github.io/Frontend/front.png">
+    
+  </head>
+  <body>
+    <header class="jumbotron jumbotron-header" id="onama"> <!-- Hero Image -->
+        <div class="container">
+          <nav class="navbar navbar-expand-sm navbar-dark fixed-top navFix">
+            <a class="n" href="#"><img class="mnsl" src="planet.svg" alt="">FRONTEND</a>
+            <a href="#onama" class="navbar-hamburger"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+            
+            <div class="collapse navbar-collapse" id="navMenu"> 
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item jed"><a class="link cr" href="#">What is it</a></li>
+                <li class="nav-item jed"><a class="link" href="purpose.html">The purpose</a></li>
+                <li class="nav-item jed"><a class="link" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>        
+        </div>
+        <!-- Tekst koji se nalazi u hero image-u -->
+			<h3 class="header-h3">Do you want to find out what frontend is and what it does?</h3>
+			<h1 class="header-h1">click the button below!</h1>
+			<div class="text-center">
+				<a href="#services" id="scrollButton">
+					<button type="button" id="scrollButton" class="button btn btn-link">Learn more</button> <!-- Ghost button -->
+				</a>
+			</div>
+	
+      </header>
+      <section class="services" id="targetElement"> <!-- One-page sajt, koristi services kao u nav meniju da bi klikom na "Services" iz menija automatski prebacio na ovaj deo sajta. -->
+        <div class="container">
+          <div class="row first-part">
+            <div class="half-element col-lg-8 order-lg-1 order-sm-2 order-2"> <!-- U punoj velicini ce biti prvi element, kad se smanji stavlja se na drugo mesto. Na manjim ekranima slika ide prvo, pa onda tekst. -->
+              <h1 class="services-h1 ">What is <span>FRONTEND</span></h1>
+              <p class="services-description">The frontend is what users see and interact with.</p>
+              <p><ul class="services-description"><li>The front end is the part of the website users can see and interact with such as the graphical user interface (GUI) and the command line including the design, navigating menus, texts, images, videos, etc.</li>
+                <li>Basic languages used for the front end are <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span></li>
+                <li id="html"><span>HTML</span> stands for Hypertext Markup Language. It is used to design the front-end portion of web pages using a markup language. <span>HTML</span> is a combination of Hypertext and Markup language. Hypertext defines the link between web pages.</li>
+                <li id="css">Cascading Style Sheets fondly referred to as <span>CSS</span> is a simply designed language intended to simplify the process of making web pages presentable. <span>CSS</span> allows you to apply styles to web pages.</li>
+                <li id="javascript"><span>JavaScript</span> is a famous scripting language used to create magic on sites to make the site interactive for the user. It is used to enhance the functionality of a website to run cool games and web-based software. Applicable in both front-end and back-end, <span>Javascript</span> is key to becoming a good developer.</li>
+              </ul></p>
+            </div>
+            <div class="half-element col-lg-4 order-lg-2 order-sm-1 order-1"> <!-- U punoj velicini stavlja ikonicu na drugo mestu (desna strana), da ovo nije aktivno slika bi bila prva, pa onda tekst. -->
+              <img class="scroll-element from-right" src="code.svg" style="opacity: 85%; margin-top: 80px;">
+            </div>
+          </div>
+        </div>
+        <div style="background-color: #fafafa"> <!-- Boja pozadine u sekciji dva -->
+          <div class="container">
+            <div class="row second-part">
+              <div class="half-element col-lg-6"> <!-- Na ovom elementu nema order-sm kao na prehodnom, te se slika postavlja prva. -->
+                <img class="scroll-element from-left" src="frame.png" style=" margin-top: 280px;">
+              </div>
+              <div class="half-element col-lg-6"> <!-- Tekst se postavlja drugi. -->
+                <h1 class="services-h1"><span>Frameworks</span> and <span>Libraries</span></h1>
+                <p><ul class="services-description"><li><span>AngularJS:</span> AngularJs is a <a onclick="scrollToTerm('javascript')"><span>JavaScript</span></a> open-source front-end framework that is mainly used to develop single-page web applications(SPAs). It is a continuously growing and expanding framework which provides better ways for developing web applications. It changes the static <a onclick="scrollToTerm('html')"><span>HTML</span></a> to dynamic <a onclick="scrollToTerm('html')"><span>HTML</span></a>. It is an open-source project which can be free. It extends <a onclick="scrollToTerm('html')"><span>HTML</span></a> attributes with Directives, and data is bound with <a onclick="scrollToTerm('html')"><span>HTML</span></a>.</li>
+                <li><span>React.js:</span> React is a declarative, efficient, and flexible <a onclick="scrollToTerm('javascript')"><span>JavaScript</span></a> library for building user interfaces. <span>ReactJS</span> is an open-source, component-based front-end library responsible only for the view layer of the application. It is maintained by Facebook. Moreover, <span>React Js</span> makes Front-end development very easy.</li>
+                <li><span>Bootstrap:</span> Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular <a onclick="scrollToTerm('html')"><span>HTML</span></a>, <a onclick="scrollToTerm('css')"><span>CSS</span></a>, and <a onclick="scrollToTerm('javascript')"><span>JavaScript</span></a> framework for developing responsive, mobile-first websites.</li>
+                <li><span>jQuery:</span> jQuery is an open-source <a onclick="scrollToTerm('javascript')"><span>JavaScript</span></a> library that simplifies the interactions between an <a onclick="scrollToTerm('html')"><span>HTML</span></a>/<a onclick="scrollToTerm('css')"><span>CSS</span></a> document, or more precisely the Document Object Model (DOM), and <a onclick="scrollToTerm('javascript')"><span>JavaScript</span></a>. Elaborating on the terms, <span>jQuery</span> simplifies <a onclick="scrollToTerm('html')"><span>HTML</span></a> document traversing and manipulation, browser event handling, DOM animations, Ajax interactions, and cross-browser <a onclick="scrollToTerm('javascript')"><span>JavaScript</span></a> development.</li>
+                <li><span>SASS:</span> It is the most reliable, mature, and robust <a onclick="scrollToTerm('css')"><span>CSS</span></a> extension language. It is used to extend the functionality of an existing <a onclick="scrollToTerm('css')"><span>CSS</span></a> of a site including everything from variables, inheritance, and nesting with ease.</li>
+                <li><span>Vue.js:</span> Vue.js is a progressive <a onclick="scrollToTerm('javascript')"><span>JavaScript</span></a> framework that emphasizes ease of use, flexibility, and performance. It offers a gentle learning curve, making it an attractive option for developers new to frontend frameworks. With its component-based approach and reactive data-binding system, <span>Vue.js</span> enables you to build scalable and maintainable web applications.</li>
+               </div>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+      <center>
+        <section class="video">       
+          <div class="video-img">
+              <img src="video2.png" alt="Image Description">
+          <div class="overlay" onclick="openPopup()">
+              <img class="video-btnn" src="play.svg" alt="Play Icon"><a class="video-txt" href="#img1">Watch video</a>
+          </div> 
+      </div>
+      <div id="popup" class="popup-video">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <iframe src="https://www.youtube.com/watch?v=Tef1e9FiSR0" frameborder="0" allowfullscreen></iframe>
+    </div>
+      <div id="backgroundOverlay" class="background-overlay" onclick="closePopup()"></div>
+  </section>
+      </center>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="caret-up.svg" alt=""></button>
+      <footer>
+        <div class="footer-content">
+            <div class="footer-list">
+            <div class="contact-info">
+                <p class="footer-h">Novi Sad</p>
+                <p class="footer-txt">Novi Sad</p>
+                <p class="footer-h">Phone</p>
+                <p class="footer-txt">+381 61 195 54 36</p>
+            </div>
+            <div class="social-media">
+                <p class="footer-h">Email</p>
+                <a class="footer-txt" href="strifunovic17@gmail.com">strifunovic17@gmail.com</a>
+                <p class="footer-hh">Follow us</p>
+                <a href="#"><img src="instagram-logo.svg" alt=""></a>
+                <a href="#"><img src="facebook-logo.svg" alt=""></a>
+                <a href="#"><img src="github-logo.svg" alt=""></a>
+            </div>
+            <div class="newsletter">
+                <p class="footer-h">Newsletter</p>
+                <div class="input-container">
+                <input type="email" id="newsletter" name="newsletter" placeholder="Email">
+                <button type="submit"><img src="tt_chevron_right.svg" alt=""></button>
+              </div>
+            <p class="footer-txt">&copy; 2024 FRONTEND. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="footer-hr">
+        <nav>
+            <div class="footer-nav">
+              <a class="n" href="#"><img class="mnsl" src="planet.svg" alt="">FRONTEND</a>
+            <ul>
+                <li><a href="#">What is it</a></li>
+                <li><a href="purpose.html">The purpose</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </footer>
+    <script src="java.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
